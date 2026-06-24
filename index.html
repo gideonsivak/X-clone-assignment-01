@@ -5,11 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- பூட்ஸ்டார்ப் ஐகான்கள் -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>X Clone Assignment</title>
 </head>
 
-<body>
+<!-- column a 3:6:3 endu pirithal and full webpage black and text white kuduthal -->
+
+<body class="bg-black text-white">
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+
+            <!-- FIRST (3 OF 12) COLUMN STARTS HERE -->
+            <!-- border-end (வலது பக்க கோடு வர) border-secondary (சாம்பல் நிறம் வர) vh-100 (முழு உயரம் வர) -->
+            <div class="col-md-3 border-end border-secondary vh-100">
+                <!-- Ithan antha X icon -->
+                <div class="px-3 pt-3">
+                    <i class="bi bi-twitter-x fs-1 text-white"></i>
+                </div>
+
+                <!-- HOME, NOTIFICATION, ABOUT NAVLINGS START HERE -->
+                <ul class="nav flex-column py-3">
+
+                    <!-- 1. Home மெனு -->
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active text-white fs-5 fw-bold d-flex align-items-center" href="#">
+                            <i class="bi bi-house-door-fill me-3"></i> Home
+                        </a>
+                    </li>
+
+                    <!-- 2. Notifications மெனு -->
+                    <li class="nav-item mb-3">
+                        <a class="nav-link text-white fs-5 d-flex align-items-center" href="#">
+                            <i class="bi bi-bell me-3"></i> Notifications
+                        </a>
+                    </li>
+
+                    <!-- 3. Profile மெனு -->
+                    <li class="nav-item mb-3">
+                        <a class="nav-link text-white fs-5 d-flex align-items-center" href="#">
+                            <i class="bi bi-person me-3"></i> Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-3">
+                        <a class="nav-link text-white fs-5 d-flex align-items-center" href="#">
+                            <i class="bi bi-three-dots me-3"></i> More
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- HOME, NOTIFICATION, ABOUT  ARE END HERE -->
+
+                <!-- POST BUTTON -->
+                <div class="px-3">
+                    <button type="button" class="btn btn-tweet w-100 rounded-pill fw-bold fs-5 py-2">
+                        Post
+                    </button>
+                </div>
+                <!-- POST BUTTON END HERE -->
+
+                <!-- JOHN DOE SMALL CIRCLE ACCOUNT BELOW FIRST 3: COLUMN -->
+                <div class="px-3 d-flex align-items-center justify-content-between custom-profile mt-auto">
+                    <div class="d-flex align-items-center">
+                            <!-- ஒரு தற்காலிக வட்டமான படம் -->
+                            <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <div class="fw-bold fs-6 text-white leading-sm">John Doe</div>
+                                <div class="text-secondary small">@johndoe</div>
+                            </div>
+                    </div>
+                    <i class="bi bi-three-dots text-white"></i>
+                </div>
+                 <!-- JOHN DOE SMALL CIRCLE ACCOUNT END HERE -->
+
+
+            </div>
+        </div>
+        <!-- FIRST (3 OF 12) COLUMN END HERE -->
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6">
+            Middle Sidebar
+        </div>
+        <div class="col-md-3 border-start border-secondary vh-100">
+            Right Sidebar
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -17,7 +118,7 @@
 
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js">
-        
+
     </script>
 </body>
 

@@ -1,0 +1,12 @@
+/* எக்ஸ் தளத்தின் அசல் பிரகாசமான நீல நிற பட்டன் */
+.btn-tweet {
+    background-color: #1d9bf0 !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* பட்டன் மீது மவுஸை வைக்கும்போது லேசான கறுப்பு நிறம் மாற */
+.btn-tweet:hover {
+    background-color: #1a8cd8 !important;
+    color: white !important;
+}
