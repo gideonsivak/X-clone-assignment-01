@@ -14,3 +14,14 @@
     background-color: #1a8cd8 !important;
     color: white !important;
 }
+
+/* சர்ச் பாக்ஸ் கிளிக் செய்யும்போது பார்டர் நீல நிறமாக மாற */
+.search-box-container:focus-within {
+    background-color: black !important;
+    border: 1px solid #1d9bf0;
+}
+
+/* உள்ளே இருக்குற எழுத்தின் நிறம் */
+.search-box-container input::placeholder {
+    color: #6e767d;
+}
