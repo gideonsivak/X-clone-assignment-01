@@ -287,10 +287,11 @@
             <!-- ========================================================== -->
             <!-- THIRD (3 OF 12) COLUMN STARTS HERE (RIGHT SIDEBAR) -->
             <!-- ========================================================== -->
-            <div class="col-md-3 p-3 d-none d-lg-block">
+            <!-- 🌟 3-வது காலத்தை மட்டும் தனியா ஸ்க்ரோல் செய்ய மாற்றப்பட்ட மெயின் வரி -->
+            <div class="col-md-3 p-3 d-none d-lg-block sticky-top" style="height: 100vh; overflow-y: auto; scrollbar-width: none;">
 
                 <!-- 🔍 ஸ்டெப் 1: தேடல் பட்டி (Search Box) மட்டும் -->
-                <div class="mb-3 sticky-top bg-black py-2">
+                <div class="mb-3 py-2">
                     <div
                         class="search-box-container d-flex align-items-center px-3 py-2 bg-dark bg-opacity-50 rounded-pill">
                         <!-- பூட்ஸ்டாரப் சர்ச் ஐகான் -->
@@ -300,6 +301,82 @@
                             placeholder="Search">
                     </div>
                 </div>
+
+
+                <!-- ========================================================== -->
+                <!-- 📈 கார்டு 2: TRENDS FOR YOU ஆரம்பம் -->
+                <!-- ========================================================== -->
+                <!-- bg-dark bg-opacity-25 = லேசான கருப்பு பின்னணி
+                     border border-secondary border-opacity-25 = லேசான சாம்பல் பார்டர்
+                     rounded-4 = ஓரங்களை வளைக்க
+                     p-3 = உள்ளே கேப் விட (Padding)
+                     mb-3 = Who to follow கார்டுக்கு நடுவுல இடைவெளி வர (Margin Bottom) -->
+                <div class="p-3 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-25 mb-3">
+
+                    <!-- கார்டின் தலைப்பு -->
+                    <h5 class="fw-bold text-white mb-3">Trends for you</h5>
+
+                    <!-- 🔥 ட்ரெண்ட் 1: #GPT5 -->
+                    <div class="trend-item p-2 rounded-3 mb-2">
+                        <!-- d-flex justify-content-between = எழுத்தையும் ஐகானையும் இருபுறமும் தள்ளும் -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-secondary small">Technology · Trending</small>
+                            <i class="bi bi-three-dots text-secondary"></i>
+                        </div>
+                        <div class="fw-bold text-white fs-6">#GPT5</div>
+                        <small class="text-secondary small">482K posts</small>
+                    </div>
+
+                    <!-- 🔥 ட்ரெண்ட் 2: #Blackwell -->
+                    <div class="trend-item p-2 rounded-3 mb-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-secondary small">AI · Trending</small>
+                            <i class="bi bi-three-dots text-secondary"></i>
+                        </div>
+                        <div class="fw-bold text-white fs-6">#Blackwell</div>
+                        <small class="text-secondary small">218K posts</small>
+                    </div>
+
+                    <!-- 🔥 ட்ரெண்ட் 3: #AGI -->
+                    <div class="trend-item p-2 rounded-3 mb-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-secondary small">Trending in United States</small>
+                            <i class="bi bi-three-dots text-secondary"></i>
+                        </div>
+                        <div class="fw-bold text-white fs-6">#AGI</div>
+                        <small class="text-secondary small">1.2M posts</small>
+                    </div>
+
+                    <!-- 🔥 ட்ரெண்ட் 4: #Nvidia -->
+                    <div class="trend-item p-2 rounded-3 mb-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-secondary small">Finance · Trending</small>
+                            <i class="bi bi-three-dots text-secondary"></i>
+                        </div>
+                        <div class="fw-bold text-white fs-6">#Nvidia</div>
+                        <small class="text-secondary small">341K posts</small>
+                    </div>
+
+                    <!-- 🔥 ட்ரெண்ட் 5: #OpenSource -->
+                    <div class="trend-item p-2 rounded-3 mb-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-secondary small">Technology · Trending</small>
+                            <i class="bi bi-three-dots text-secondary"></i>
+                        </div>
+                        <div class="fw-bold text-white fs-6">#OpenSource</div>
+                        <small class="text-secondary small">156K posts</small>
+                    </div>
+
+                    <!-- 🔗 கார்டின் கீழே இருக்கும் "Show more" லிங்க் -->
+                    <!-- text-primary = நீல நிறம், text-decoration-none = அடிக்கோடு (Underline) வரக்கூடாது -->
+                    <a href="#" class="text-primary text-decoration-none small d-block mt-3 fw-bold ps-2">Show more</a>
+
+                </div>
+                <!-- ========================================================== -->
+                <!-- 📈 TRENDS FOR YOU முடிவு -->
+                <!-- ========================================================== -->
+
+
 
                 <!-- 👥 கார்டு 3: Who to follow ஆரம்பம் -->
                 <!-- பூட்ஸ்டாரப் கிளாஸ்கள் விளக்கம்:
@@ -311,8 +388,6 @@
 
                     <!-- கார்டோட தலைப்பு (Heading) -->
                     <h5 class="fw-bold text-white mb-3">Who to follow</h5>
-
-                    <!-- 🚨 உள்ளே வர வேண்டிய ஆட்களின் விபரங்களை அடுத்த ஸ்டெப்ல பார்ப்போம் அண்ணா -->
 
 
                     <!-- 👤 நபர் 1: Jensen Huang விபரங்கள் -->
@@ -336,7 +411,7 @@
                                     <!-- ப்ளூ டிக் வெரிஃபைட் ஐகான் -->
                                     <i class="bi bi-patch-check-fill text-primary ms-1"></i>
                                 </div>
-                                         <div class="text-secondary small">@nvidia</div>
+                                <div class="text-secondary small">@nvidia</div>
                             </div>
                         </div>
 
@@ -347,16 +422,17 @@
                         <button class="btn btn-light btn-sm rounded-pill fw-bold px-3">Follow</button>
                     </div>
 
-                        <!-- 👤 நபர் 2: Tim Cook விபரங்கள் -->
+                    <!-- 👤 நபர் 2: Tim Cook விபரங்கள் -->
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
                             <!-- ப்ரொஃபைல் வட்டப் படம் (தற்காலிகமாக TC என்ற எழுத்துக்களோடு) -->
-                            <div class="bg-warning rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">
+                            <div class="bg-warning rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold"
+                                style="width: 40px; height: 40px;">
                                 TC
                             </div>
                             <div>
                                 <div class="fw-bold text-white small">
-                                    Tim Cook 
+                                    Tim Cook
                                     <i class="bi bi-patch-check-fill text-primary ms-1"></i>
                                 </div>
                                 <div class="text-secondary small">@tim_cook</div>
@@ -370,12 +446,13 @@
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <div class="d-flex align-items-center">
                             <!-- ப்ரொஃபைல் வட்டப் படம் (தற்காலிகமாக LS என்ற எழுத்துக்களோடு) -->
-                            <div class="bg-danger rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">
+                            <div class="bg-danger rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold"
+                                style="width: 40px; height: 40px;">
                                 LS
                             </div>
                             <div>
                                 <div class="fw-bold text-white small">
-                                    Lisa Su 
+                                    Lisa Su
                                     <i class="bi bi-patch-check-fill text-primary ms-1"></i>
                                 </div>
                                 <div class="text-secondary small">@lisasu</div>
@@ -390,11 +467,36 @@
 
 
 
-                    </div>
                 </div>
+
                 <!-- Who to follow கார்டு முடிவு -->
 
 
+                
+                <!-- ========================================================== -->
+                <!-- 📄 ஸ்டெப் 4: TERMS & PRIVACY FOOTER LINKS (புதிதாக சேர்க்கப்பட்டது)-->
+                <!-- ========================================================== -->
+                <!-- px-2 = இடது, வலது பக்கம் லேசான கேப்
+                     mt-3 = Who to follow கார்டுக்கு கீழே கேப் விட
+                     flex-wrap = ஸ்கிரீன் சின்னதாகும்போது லிங்க்குகள் தானாக அடுத்த வரிய線க்கு வர -->
+                <div class="d-flex flex-wrap px-2 mt-4 text-secondary" style="font-size: 13px;">
+
+                    <!-- ஒவ்வொரு லிங்க்கும் me-2 (வலது பக்கம் கேப்) மற்றும் link-secondary (ஹோவர் எஃபெக்ட்) கொண்டுள்ளது -->
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Terms of
+                        Service</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Cookie Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Accessibility</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">About</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Help Center</a>
+                    <a href="#" class="text-secondary text-decoration-none link-secondary me-2 mb-1">Ads info</a>
+
+                    <!-- © காப்பிரைட் டெக்ஸ்ட் (mt-1 = மேல் பக்கத்தில் குட்டி கேப்) -->
+                    <div class="w-100 mt-1" style="font-size: 13px;">
+                        &copy; 2026 X Corp.
+                    </div>
+
+                </div>
 
             </div>
             <!-- ========================================================== -->
@@ -403,7 +505,6 @@
 
 
         </div>
-    </div>
 
 
 
@@ -417,9 +518,10 @@
 
 
 
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js">
+        <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js">
 
-    </script>
+        </script>
 </body>
 
 </html>
+
