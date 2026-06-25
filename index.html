@@ -217,10 +217,96 @@
                     <!-- கஜன் அண்ணன், உங்களோட எபௌட் (About) கோடு எல்லாமே இந்த வரிக்கிக் கீழேதான் வரணும்.  -->
                     <!-- ஜான் மற்றும் திவின்சன் இந்த செக்ஷனுக்குள்ள கை வைக்கத் தேவை இல்லை. -->
                     <section id="kajan-about" class="p-3">
+           
+                        <!--mel pakuthiyil test modal button section-->
+                    <div class="p-3 text-center border-bottom border-secondary">
+                        <small class="text-secondary d-block mb-2">tempirory more</small> <!--john more button la link pannum maddum tharkalikama irukkura buton-->
+                    <button class="btn btn-primary rounded-pill fw-bold btn-sm" data-bs-toggle="modal" data-bs-target="#commentModal">  <!--modal thirakkura button-->
+                         <i class="bi bi-chat-left-text"></i> Click to Test Modal Box
+                    </button>
+                    </div>
+         <!--profile header section kkuriyathu-->
+        <header class="profile-header position-relative">
+           <!--cover/banner image pakkuthikkuriyathu -->
+            <div class="profile-banner"></div>
+        <!--profile picture and edit profile button pakkuthikkuriyathu -->
+            <div class="px-3 d-flex justify-content-between align-items-end profile-avatar-row">  <!--profile picture ooda section-->
+               <!--profile picture -->
+                <img src="./close-up-of-a-charming-ginger-kitten-with-big-blue-eyes-resting-on-a-soft-blanket-photo.jpg" alt="Kajan siva Profile Picture" class="rounded-circle border border-5 border-black profile-img">
+               <!--edit profile button -->
+                <button class="btn btn-outline-light rounded-pill fw-bold edit-btn" aria-label="Edit Profile">Edit profile</button>
+            </div>
+            </header>
+         <!--profile details section pakkuthikkuriyathu -->
+        <div class="profile-details px-3 mt-3">
+            <h1 class="fw-bold h4 m-0">kajan</h1>
+            <p class="text-secondary small">kajan_siva · 7 posts</p>
+            
+            <!--bio section -->
+            <p class="mt-2 bio-text">
+                🚀 IT student,study in Yarl It Hub. <br>
+                📌 Open-source advocate. Opinions are my own.
+            </p>
+             <!--location, website, and join date section -->  
+            <div class="d-flex flex-wrap text-secondary small gap-3 mt-2">
+                <span><i class="bi bi-geo-alt"></i> Srilanka</span>     <!--ethula john <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">add pannanum ninka.add pannaal thaan icon work aakum-->
+                <span><i class="bi bi-link-45deg"></i> <a href="#" class="text-primary text-decoration-none">kajan_siva</a></span>
+                <span><i class="bi bi-calendar3"></i> Joined May 2026</span>
+            </div>
+             <!--following and followers section -->
+            <div class="d-flex gap-3 mt-3 small">
+                <p><span class="fw-bold text-white">10k</span> <span class="text-secondary">Following</span></p>
+                <p><span class="fw-bold text-white">56.3K</span> <span class="text-secondary">Followers</span></p>
+            </div>
+            </div>
+            <!--profile tabs section pakkuthikkuriyathu -->
+             <nav class="profile-tabs-nav mt-3" aria-label="Profile tabs">
+            <ul class="nav nav-tabs border-bottom border-secondary text-center profile-tabs flex-nowrap" id="profileTab" role="tablist">
+                <li class="nav-item flex-fill" role="presentation">
+                     <button class="nav-link w-100 text-white fw-bold border-0 bg-transparent py-3 active" id="posts-tab" data-bs-toggle="tab" data-bs-target="#posts-content" type="button" role="tab" aria-controls="posts-content" aria-selected="true">Posts</button>
+                     </li>
 
-                    <p>hello I am kajan</p>
+                     <!-- Replies, Media, Likes tabs -->
+                      <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100 text-secondary fw-bold border-0 bg-transparent py-3" id="replies-tab" data-bs-toggle="tab" data-bs-target="#replies-content" type="button" role="tab" aria-controls="replies-content" aria-selected="false">Replies</button>
+                </li>
+                  <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100 text-secondary fw-bold border-0 bg-transparent py-3" id="media-tab" data-bs-toggle="tab" data-bs-target="#media-content" type="button" role="tab" aria-controls="media-content" aria-selected="false">Media</button>
+                </li>
+                  <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100 text-secondary fw-bold border-0 bg-transparent py-3" id="likes-tab" data-bs-toggle="tab" data-bs-target="#likes-content" type="button" role="tab" aria-controls="likes-content" aria-selected="false">Likes</button>
+                </li>
+            </ul>
+        </nav>
 
+         <div class="tab-content posts-feed" id="profileTabContent">
+            
+            <div class="tab-pane fade show active" id="posts-content" role="tabpanel" aria-labelledby="posts-tab">
+                
+                <!-- Post item -->
+                <article class="post-item p-3 border-bottom border-secondary">
+                    <a href="post-details.html" class="text-decoration-none text-white d-flex gap-3">
+                        <img src="https://via.placeholder.com/40" class="rounded-circle align-self-start" alt="User">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                <span class="fw-bold">John Doe</span>
+                                <span class="text-secondary small">@johndoe · now</span>
+                                </div>
+                                <span class="text-secondary small"><i class="bi bi-three-dots"></i></span>
+                            </div>
+                            <p class="mt-1 mb-2">hello john sivakumar</p>
+                            <div class="d-flex justify-content-between text-secondary mt-2 max-width-actions" style="max-width: 400px;">
+                                <span class="hover-blue"><i class="bi bi-chat"></i> 0</span>
+                                <span class="hover-green"><i class="bi bi-arrow-repeat"></i> 0</span>
+                                <span class="hover-pink"><i class="bi bi-heart"></i> 0</span>
+                                <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
                         
+                
                         <!-- (கஜன் அண்ணன், உங்களோட கோடை இங்கதான் எழுதணும்!) -->
 
 
