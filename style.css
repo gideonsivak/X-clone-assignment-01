@@ -1,12 +1,22 @@
-/* எக்ஸ் தளத்தின் அசல் பிரகாசமான நீல நிற பட்டன் */
-.btn-tweet {
-    background-color: #1d9bf0 !important;
-    border: none !important;
-    color: white !important;
+/* ========================================================== */
+/* ⭐ PAVITHRA - PREMIUM MENU STYLES (SIMPLIFIED)             */
+/* ========================================================== */
+
+.nav-premium {
+    color: #1d9bf0 !important; /* எக்ஸ் ஒரிஜினல் பிரீமியம் நீல நிறம் */
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease;
 }
 
-/* பட்டன் மீது மவுஸை வைக்கும்போது லேசான கறுப்பு நிறம் மாற */
-.btn-tweet:hover {
-    background-color: #1a8cd8 !important;
-    color: white !important;
+.premium-icon {
+    color: #1d9bf0 !important;
 }
+
+.nav-premium:hover {
+    background-color: rgba(29, 155, 240, 0.1) !important; /* லேசான வட்ட வடிவ நீல பின்னணி */
+    border-radius: 50px;
+    color: #1a8cd8 !important;
+}
+/* ========================================================== */
+
