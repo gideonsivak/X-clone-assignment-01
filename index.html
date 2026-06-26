@@ -32,8 +32,11 @@
                 <ul class="nav flex-column py-3">
 
                     <!-- 1. Home மெனு -->
+                    <!-- 1. Home மெனு -->
                     <li class="nav-item mb-3">
-                        <a class="nav-link active text-white fs-5 fw-bold d-flex align-items-center" href="#">
+                        <!-- 🌟 href="#" ஐ நீக்கிவிட்டு, id மற்றும் onclick செயல்பாடுகள் இங்கே சேர்க்கப்பட்டுள்ளது -->
+                        <a id="nav-home" class="nav-link active text-white fs-5 fw-bold d-flex align-items-center"
+                            style="cursor: pointer;" onclick="showSection('home')">
                             <i class="bi bi-house-door-fill me-3"></i> Home
                         </a>
                     </li>
@@ -81,7 +84,9 @@
                 <div class="px-3 d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                         <!-- ஒரு தற்காலிக வட்டமான படம் -->
-                        <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"
+                            class="rounded-circle me-2" alt="John Doe Profile"
+                            style="width: 40px; height: 40px; object-fit: cover;">
                         <div>
                             <div class="fw-bold fs-6 text-white leading-sm">John Doe</div>
                             <div class="text-secondary small">@johndoe</div>
@@ -114,55 +119,371 @@
 
 
             <!-- SECOND (6 OF 12) COLUMN STARTS HERE (MIDDLE SIDEBAR) -->
+            <!-- 🌟 நடுவில் உள்ள 6-வது காலத்தை மட்டும் தனியா ஸ்க்ரோல் செய்ய மாற்றப்பட்ட மெயின் வரி -->
+
             <!-- [மாற்றம் 1]: பார்டர், மினிமம் உயரம் மற்றும் பேடிங் 0 சேர்த்தாச்சு -->
-            <main class="col-md-6 border-end border-secondary min-vh-100 p-0"> <!--INTHA ELEMENT A ALIKKA VENAM -->
+            <main class="col-md-6 border-end border-secondary p-0"
+                style="height: 100vh; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none;">
+                <!--INTHA ELEMENT A ALIKKA VENAM --> <!--INTHA ELEMENT A ALIKKA VENAM -->
 
                 <!-- [மாற்றம் 2]: எப்போதுமே மேலேயே ஒட்டிக்கிட்டு இருக்கப்போற ஹெடர் பகுதி -->
 
-                <div class="px-3 py-3 border-bottom border-secondary sticky-top bg-black">
-                    <!--INTHA ELEMENT A ALIKKA VENAM -->
-                    <!-- நாளைக்கு அவங்க அவங்க பக்கத்துக்கு ஏத்த மாதிரி இந்த பேரை (Home/Notifications/About) மாத்திக்கலாம் -->
-                    <h5 class="fw-bold m-0" id="main-header-title">Home</h5>
-                    <!--INTHA ELEMENT A ALIKKA VENAM  UNGADA SECTION KU URIYA NAME AND OTHER HEADERS (NAVLINGS) MADDUM MATHUNGA-->
+                <div class="border-bottom border-secondary sticky-top bg-black"> <!--INTHA DIV A ALIKKA VENAM -->
+
+                    <!-- 🌟 [புதுச் சேர்க்கை]: 'For you' & 'Following' டேப்கள் வர வேண்டிய இடம் -->
+                    <div class="d-flex text-center fw-bold mt-2">
+                        <!-- For You டேப் (கீழே ப்ளூ கலர் கோட்டுடன் text-white) -->
+                        <div class="p-3 flex-grow-1 text-white border-bottom border-primary border-3"
+                            style="cursor: pointer;">
+                            For you
+                        </div>
+                        <!-- Following டேப் (கருப்பா தெரியாம இருக்க பூட்ஸ்ட்ராப் ஒபாசிட்டி சேர்த்தாச்சு) -->
+                        <div class="p-3 flex-grow-1 text-white text-opacity-50" style="cursor: pointer;">
+                            Following
+                        </div>
+                    </div>
+
                 </div> <!--INTHA DIV A ALIKKA VENAM -->
 
 
                 <!-- ========================================== -->
                 <!-- [மாற்றம் 3]: 3 PERUKUM SERTHU கன்டென்ட் வர வேண்டிய முக்கிய பகுதி (Content Placeholder) -->
                 <!-- ========================================== -->
-                <div class="main-content-body p-3"> <!--INTHA ELEMENT A ALIKKA VENAM -->
-
-
-
-
-
-
+                <div class="main-content-body p-0">
+                    <!--INTHA ELEMENT A ALIKKA VENAM (💡 இங்க மட்டும் பேடிங் p-0 ஆக்கியிருக்கேன் அண்ணா, அப்போதான் ட்வீட்கள் பார்டர் ஓரத்துல ஒட்டி அழகா வரும்) -->
 
                     <!-- ========================================================== -->
                     <!-- 🏠 SECTION 1: JOHN (YOU) - HOME/TWEET AREA START -->
                     <!-- ========================================================== -->
-                    <!-- ஜான் (அண்ணா), உங்களோட "What's happening?!" பாக்ஸ் மற்றும் ட்வீட் ஃபீட் கோடு எல்லாமே ithukku keela than வரணும். -->
+                    <!-- ஜான் உங்களோட "What's happening?!" பாக்ஸ் மற்றும் ட்வீட் ஃபீட் கோடு எல்லாமே ithukku keela than வரணும். -->
                     <!-- திவின்சன் மற்றும் காஜன் அண்ணன் இந்த செக்ஷனுக்குள்ள கை வைக்க மாட்டாங்க. -->
-                    <section id="john-home-tweets" class="border-bottom border-secondary p-3">
+                    <section id="john-home-tweets" class="p-0">
 
-                        <!-- (ஜான் அண்ணா, உங்களோட ஹோம் பேஜ் கோடை இங்கதான் எழுதணும்!) -->
+                        <!-- (ஜான் உங்களோட ஹோம் பேஜ் கோடை இங்கதான் எழுதணும்!) -->
+                        <!-- 🌟 [புதுச் சேர்க்கை 1]: ட்வீட் பாக்ஸ் மெயின் கன்டெய்னர் (Flexbox முறையில்) -->
+                       <div class="d-flex p-3 py-4 border-bottom border-secondary">
+
+                            <!-- 1. இடது பக்கம்: ப்ரொஃபைல் படம் (உடையாமல் இருக்க அக்யூரட் ஆன்லைன் இமேஜ் போட்ருக்கேன் அண்ணா) -->
+                            <div class="me-3">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100"
+                                    class="rounded-circle" alt="User Profile"
+                                    style="width: 40px; height: 40px; object-fit: cover;">
+                            </div>
+
+                            <!-- 2. வலது பக்கம்: இன்புட் ஏரியா மற்றும் பட்டன்கள் -->
+                            <div class="w-100">
+                                <!-- 🌟 [பெரிய மாற்றம்]: input-க்கு பதிலா textarea போட்டாச்சு அண்ணா! -->
+                                <!-- rows="2" கொடுத்ததால் ஆரம்பத்துல சின்னதா இருக்கும், டைப் பண்ண பண்ண 6 of 12 அகலத்துக்குள்ளேயே அழகா கீழே இறங்கும் -->
+                                <textarea
+                                    class="form-control bg-transparent border-0 text-white fs-5 p-1 shadow-none text-opacity-75"
+                                    placeholder="What is happening?!" rows="1" oninput="autoResize(this)"
+                                    style="resize: none; caret-color: #1d9bf0; overflow: hidden; min-height: 25px;">
+</textarea>
+                                <div class="border-top border-secondary mt-3"></div>
+
+                                <!-- ஐகான்களும் போஸ்ட் பட்டனும் பக்கத்துல பக்கத்துல வர வேண்டிய பகுதி -->
+                                <div class="d-flex justify-content-between align-items-center mt-3 pt-2">
+
+                                    <!-- பூட்ஸ்ட்ராப் ஐகான்கள் (Bootstrap Icons v1.11.3) -->
+                                    <div class="text-primary fs-5 d-flex gap-3">
+                                        <i class="bi bi-image" style="cursor: pointer;"></i>
+                                        <i class="bi bi-filetype-gif" style="cursor: pointer;"></i>
+                                        <i class="bi bi-bar-chart-line" style="cursor: pointer;"></i>
+                                        <i class="bi bi-emoji-smile" style="cursor: pointer;"></i>
+                                        <i class="bi bi-geo-alt" style="cursor: pointer;"></i>
+                                    </div>
+
+                                    <!-- போஸ்ட் பட்டன் -->
+                                    <button class="btn btn-primary fw-bold rounded-pill px-4 py-1 fs-6">Post</button>
+                                </div>
+                            </div>
+
+                        </div> <!-- ட்வீட் பாக்ஸ் முடிகிறது -->
+                        <!-- 🌟 [புதுச் சேர்க்கை 2]: ட்வீட் ஃபீட் லிஸ்ட் (இங்கதான் எல்லா ட்வீட்களும் வரிசையா வரும்) -->
+                        <div class="tweets-feed-list">
+
+                            <!-- ========================================== -->
+                            <!-- 1. எலோன் மஸ்க் ட்வீட் கார்டு (Elon Musk Tweet) -->
+                            <!-- ========================================== -->
+                            <div class="d-flex p-3 border-bottom border-secondary" style="cursor: pointer;">
+                                <!-- இடது பக்கம்: எலோன் மஸ்க் ப்ரொஃபைல் படம் -->
+                                <div class="me-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                                        class="rounded-circle" alt="Elon Musk"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <!-- வலது பக்கம்: ட்வீட் கன்டென்ட் முழுமையாக -->
+                                <div class="w-100">
+                                    <!-- ட்வீட் ஹெடர் (பெயர், ப்ளூ டிக், ஹேண்டில், நேரம்) -->
+                                    <div class="d-flex align-items-center mb-1 flex-wrap">
+                                        <span class="fw-bold text-white me-1">Elon Musk</span>
+                                        <!-- பூட்ஸ்ட்ராப் ப்ளூ கலரில் ஒரு குட்டி டிக் ஐகான் -->
+                                        <i class="fa-solid fa-circle-check text-primary me-1"
+                                            style="font-size: 14px;"></i>
+                                        <span class="text-white text-opacity-50 me-2"
+                                            style="font-size: 15px;">@elonmusk</span>
+                                        <span class="text-white text-opacity-50" style="font-size: 15px;">· 2h</span>
+                                    </div>
+                                    <!-- ட்வீட் உரை (Tweet Text) -->
+                                    <p class="text-white mb-2 p-1" style="font-size: 15px; line-height: 20px;">
+                                        The thing I find most surprising is how few people realize that X is now the
+                                        largest real-time news platform on the planet. Over 600M monthly active users
+                                        and growing fast. 🚀
+                                    </p>
+                                    <!-- ட்வீட் ஃபுட்டர் ஐகான்கள் (Comment, Retweet, Like, Bookmark, Share) -->
+                                    <!-- justify-content-between கொடுத்துட்டு அதிகபட்ச அகலத்தை (max-width) கட்டுப்படுத்தினா அசல் எக்ஸ் மாதிரி கேப் வரும் அண்ணா -->
+                                    <div class="d-flex justify-content-between text-white text-opacity-50 mt-3"
+                                        style="max-width: 425px; font-size: 13px;">
+                                      <span class="hover-blue"><i class="bi bi-chat me-2"></i>2.1K</span>
+                                        <span class="hover-green"><i class="bi bi-arrow-repeat me-2"></i>1.5K</span>
+                                        <span class="hover-red"><i class="bi bi-heart me-2"></i>15.6K</span>
+                                        <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                                        <span class="hover-blue"><i class="bi bi-upload"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- ========================================================================= -->
+                            <!-- சத்யா நாதெல்லா ட்வீட் கார்டு மெயின் கன்டெய்னர்                             -->
+                            <!-- ========================================================================= -->
+                            <!-- d-flex: படம் மற்றும் உரையை பக்கத்து பக்கத்தில் வைக்கிறது -->
+                            <!-- p-3: கார்டுக்குள் 1rem அளவிலான உள் இடைவெளியை (Padding) தருகிறது -->
+                            <!-- border-bottom & border-secondary: கீழ் பகுதியில் சாம்பல் நிற மெல்லிய கோட்டை உருவாக்குகிறது -->
+                            <!-- 🌟 align-items-start: படம் மற்றும் உரையை மேலிருந்து (Top) ஒரே நேர்க்கோட்டில் சீரமைக்கிறது -->
+                            <div class="d-flex p-4 px-3 border-bottom border-secondary align-items-start"
+                                style="cursor: pointer;">
+
+                                <!-- ========================================== -->
+                                <!-- இடது பக்கம்: ப்ரொஃபைல் படம் (Profile Image)  -->
+                                <!-- ========================================== -->
+                                <!-- me-3: படத்திற்கும் வலது பக்க உரைக்கும் இடையில் வலதுபுற இடைவெளி (Margin End) தருகிறது -->
+                                <!-- 🌟 flex-shrink-0: வலது பக்கம் உரை கூடினாலும் படம் நசுங்காமல் 40px அளவிலேயே நிலையாக வைத்திருக்கும் -->
+                                <div class="me-3 flex-shrink-0">
+                                    <!-- rounded-circle: இமேஜை வட்ட வடிவில் மாற்றுகிறது -->
+                                    <!-- object-fit: cover: படம் வட்டத்திற்குள் சுருங்காமல் கச்சிதமாகப் பொருந்த உதவுகிறது -->
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                                        class="rounded-circle" alt="Profile"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+
+                                <!-- ========================================== -->
+                                <!-- வலது பக்கம்: ட்வீட் விவரங்கள் முழுமையாக (Content Area) -->
+                                <!-- ========================================== -->
+                                <!-- w-100: இந்த பகுதி மீதமுள்ள முழு அகலத்தையும் (Width 100%) எடுத்துக்கொள்ளும் -->
+                                <div class="w-100">
+
+                                    <!-- [உள் பகுதி 1]: ட்வீட் ஹெடர் (பெயர், வெரிஃபைட் டிக், ஹேண்டில், நேரம்) -->
+                                    <!-- align-items-center: பெயரையும் ப்ளூ டிக்கையும் செங்குத்தாக நேர்க்கோட்டில் வைக்கிறது -->
+                                    <!-- flex-wrap: ஸ்கிரீன் சிறிதாகும்போது விவரங்கள் தானாக அடுத்த வரிக்கு நகரும் (Responsive) -->
+                                    <!-- mb-1: கீழ் பகுதிக்கு சிறிய இடைவெளி (Margin Bottom) தருகிறது -->
+                                    <div class="d-flex align-items-center mb-1 flex-wrap">
+                                        <!-- fw-bold: எழுத்துக்களை தடிமனாக்குகிறது (Font Weight Bold) -->
+                                        <span class="fw-bold text-white me-1">Satya Nadella</span>
+
+                                        <!-- bi-patch-check-fill: பூட்ஸ்ட்ராப்பின் அதிகாரப்பூர்வ வெரிஃபைட் டிக் ஐகான் -->
+                                        <i class="bi bi-patch-check-fill text-primary me-1"
+                                            style="font-size: 14px;"></i>
+
+                                        <!-- text-opacity-50: ஹேண்டில் பெயரை சாம்பல் நிறத்தில் காட்ட ஒபாசிட்டியை (50%) குறைக்கிறது -->
+                                        <span class="text-white text-opacity-50 me-2"
+                                            style="font-size: 15px;">@satyanadella</span>
+
+                                        <span class="text-white text-opacity-50" style="font-size: 15px;">· 4h</span>
+                                    </div>
+
+                                    <!-- [உள் பகுதி 2]: ட்வீட் உரை (Tweet Text) -->
+                                    <!-- mb-2: உரைக்கும் கீழே வரும் இமேஜுக்கும் இடையில் இடைவெளி தருகிறது -->
+                                    <!-- line-height: வரிகளுக்கு இடையே உள்ள காத்தோட்டமான இடைவெளியை (Spacing) சீரமைக்கிறது -->
+                                    <p class="text-white mb-4 p-1" style="font-size: 15px; line-height: 22px;">
+                                        Excited to announce that Microsoft Azure now processes over 1 trillion AI API
+                                        calls per day. The era of intelligent cloud is here. What are you building?
+                                    </p>
+
+                                    <!-- [உள் பகுதி 3]: ட்வீட் இமேஜ் பகுதி (Tweet Media) -->
+                                    <!-- mt-3 & mb-2: இமேஜ் பாக்ஸின் மேலேயும் கீழேயும் கச்சிதமான இடைவெளியை உருவாக்குகிறது -->
+                                    <div class="mt-4 mb-2">
+                                        <!-- img-fluid: இமேஜ் அதன் கன்டெய்னரை விட வெளியே போகாமல் தானாக அளவை சுருக்கிக் கொள்ளும் (Responsive) -->
+                                        <!-- rounded-4: இமேஜின் நான்கு மூலைகளையும் அழகாக வளைக்கிறது (Border Radius) -->
+                                        <!-- border & border-secondary: அசல் X தளம் போல இமேஜைச் சுற்றி மெல்லிய சாம்பல் பார்டர் தருகிறது -->
+                                        <!-- max-height: இமேஜ் ரொம்ப நீளமாகப் போகாமல் 350px-க்குள் கட்டுப்படுத்துகிறது -->
+                                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800"
+                                            class="img-fluid rounded-4 border border-secondary" alt="Azure Earth"
+                                            style="width: 100%; max-height: 350px; object-fit: cover;">
+                                    </div>
+
+                                    <!-- [உள் பகுதி 4]: ஃபுட்டர் ஆக்சன் ஐகான்கள் (Action Buttons) -->
+                                    <!-- justify-content-between: ஐகான்களை சமமான இடைவெளியில் பரப்பி வைக்கிறது -->
+                                    <!-- max-width: 425px: ஐகான்கள் ரொம்ப தூரம் விலகிப் போகாமல் அசல் X தளம் போல ஒரு குறிப்பிட்ட எல்லைக்குள் நெருக்கமாக வைக்கிறது -->
+                                    <div class="d-flex justify-content-between text-white text-opacity-50 mt-4"
+                                        style="max-width: 425px; font-size: 13px;">
+                                        <!-- me-2: ஐகானுக்கும் அதன் பக்கத்தில் உள்ள நம்பருக்கும் இடையில் சிறிய இடைவெளி தருகிறது -->
+                                        <span class="hover-blue"><i class="bi bi-chat me-2"></i>2.1K</span>
+                                        <span class="hover-green"><i class="bi bi-arrow-repeat me-2"></i>1.5K</span>
+                                        <span class="hover-red"><i class="bi bi-heart me-2"></i>15.6K</span>
+                                        <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                                        <span class="hover-blue"><i class="bi bi-upload"></i></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- ========================================================================= -->
+                            <!-- 1. JENSEN HUANG TWEET CARD                                                -->
+                            <!-- ========================================================================= -->
+                            <div class="d-flex py-4 px-3 border-bottom border-secondary align-items-start"
+                                style="cursor: pointer;">
+                                <!-- இடது பக்கம்: ப்ரொஃபைல் படம் (flex-shrink-0 நசுங்குவதைத் தடுக்கும்) -->
+                                <div class="me-3 flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100"
+                                        class="rounded-circle" alt="Jensen Huang Profile"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+
+                                <!-- வலது பக்கம்: ட்வீட் விவரங்கள் -->
+                                <div class="w-100">
+                                    <!-- ட்வீட் ஹெடர் (பெயர், ஹேண்டில், நேரம்) -->
+                                    <div class="d-flex align-items-center mb-1 flex-wrap">
+                                        <span class="fw-bold text-white me-1">Jensen Huang</span>
+                                        <i class="bi bi-patch-check-fill text-primary me-1"
+                                            style="font-size: 14px;"></i>
+                                        <span class="text-white text-opacity-50 me-2"
+                                            style="font-size: 15px;">@nvidia</span>
+                                        <span class="text-white text-opacity-50" style="font-size: 15px;">· 6h</span>
+                                    </div>
+
+                                    <!-- ட்வீட் உரை (Screenshot 03.08.18-ல் உள்ள அதே உரை) -->
+                                    <p class="text-white mb-3" style="font-size: 15px; line-height: 22px;">
+                                        The next wave of AI will be physical AI — robots that understand and interact
+                                        with the physical world. NVIDIA is building the computing stack to make it
+                                        happen. <span class="text-primary">#Blackwell #AI</span>
+                                    </p>
+
+                                    <!-- 🌟 பிக் கன்டென்ட் இமேஜ் (NVIDIA Robotics சார்ந்த படம்) -->
+                                    <div class="mt-3 mb-2">
+                                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800"
+                                            class="img-fluid rounded-4 border border-secondary" alt="NVIDIA Physical AI"
+                                            style="width: 100%; max-height: 350px; object-fit: cover;">
+                                    </div>
+
+                                    <!-- ஃபுட்டர் ஆக்சன் ஐகான்கள் -->
+                                    <div class="d-flex justify-content-between text-white text-opacity-50 mt-4"
+                                        style="max-width: 425px; font-size: 13px;">
+                                        <span class="hover-blue"><i class="bi bi-chat me-2"></i>2.1K</span>
+                                        <span class="hover-green"><i class="bi bi-arrow-repeat me-2"></i>5.6K</span>
+                                        <span class="hover-red"><i class="bi bi-heart me-2"></i>31.5K</span>
+                                        <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                                        <span class="hover-blue"><i class="bi bi-upload"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ========================================================================= -->
+                            <!-- 2. SAM ALTMAN TWEET CARD                                                  -->
+                            <!-- ========================================================================= -->
+                            <div class="d-flex py-4 px-3 border-bottom border-secondary align-items-start"
+                                style="cursor: pointer;">
+                                <!-- இடது பக்கம்: ப்ரொஃபைல் படம் -->
+                                <div class="me-3 flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                                        class="rounded-circle" alt="Sam Altman Profile"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+
+                                <!-- வலது பக்கம்: ட்வீட் விவரங்கள் -->
+                                <div class="w-100">
+                                    <!-- ட்வீட் ஹெடர் -->
+                                    <div class="d-flex align-items-center mb-1 flex-wrap">
+                                        <span class="fw-bold text-white me-1">Sam Altman</span>
+                                        <i class="bi bi-patch-check-fill text-primary me-1"
+                                            style="font-size: 14px;"></i>
+                                        <span class="text-white text-opacity-50 me-2"
+                                            style="font-size: 15px;">@sama</span>
+                                        <span class="text-white text-opacity-50" style="font-size: 15px;">· 2h</span>
+                                    </div>
+
+                                    <!-- ட்வீட் உரை -->
+                                    <p class="text-white mb-3" style="font-size: 15px; line-height: 22px;">
+                                        The rate of progress in deep learning over the last few years has been
+                                        staggering. We are focused on safety and alignment as we approach the boundaries
+                                        of AGI. Exciting times ahead.
+                                    </p>
+
+                                    <!-- 🌟 பிக் கன்டென்ட் இமேஜ் (OpenAI/AGI சார்ந்த நியூரல் நெட்வொர்க் படம்) -->
+                                    <div class="mt-3 mb-2">
+                                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800"
+                                            class="img-fluid rounded-4 border border-secondary" alt="AI Neural Network"
+                                            style="width: 100%; max-height: 350px; object-fit: cover;">
+                                    </div>
+
+                                    <!-- ஃபுட்டர் ஆக்சன் ஐகான்கள் -->
+                                    <div class="d-flex justify-content-between text-white text-opacity-50 mt-4"
+                                        style="max-width: 425px; font-size: 13px;">
+                                        <span class="hover-blue"><i class="bi bi-chat me-2"></i>8.4K</span>
+                                        <span class="hover-green"><i class="bi bi-arrow-repeat me-2"></i>4.2K</span>
+                                        <span class="hover-red"><i class="bi bi-heart me-2"></i>54.1K</span>
+                                        <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                                        <span class="hover-blue"><i class="bi bi-upload"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ========================================================================= -->
+                            <!-- 4. LINUS TORVALDS TWEET CARD                                              -->
+                            <!-- ========================================================================= -->
+                            <div class="d-flex py-4 px-3 border-bottom border-secondary align-items-start"
+                                style="cursor: pointer;">
+                                <!-- இடது பக்கம்: ப்ரொஃபைல் படம் -->
+                                <div class="me-3 flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100"
+                                        class="rounded-circle" alt="Linus Torvalds Profile"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+
+                                <!-- வலது பக்கம்: ட்வீட் விவரங்கள் -->
+                                <div class="w-100">
+                                    <!-- ட்வீட் ஹெடர் -->
+                                    <div class="d-flex align-items-center mb-1 flex-wrap">
+                                        <span class="fw-bold text-white me-1">Linus Torvalds</span>
+                                        <i class="bi bi-patch-check-fill text-primary me-1"
+                                            style="font-size: 14px;"></i>
+                                        <span class="text-white text-opacity-50 me-2"
+                                            style="font-size: 15px;">@LinusTorvalds</span>
+                                        <span class="text-white text-opacity-50" style="font-size: 15px;">· 1d</span>
+                                    </div>
+
+                                    <!-- ட்வீட் உரை -->
+                                    <p class="text-white mb-3" style="font-size: 15px; line-height: 22px;">
+                                        Just tagged the latest stable Linux kernel release. Huge thanks to the community
+                                        for robust clean-ups and security fixes. Keep the code simple, readable, and
+                                        secure. <span class="text-primary">#OpenSource</span>
+                                    </p>
+
+                                    <!-- 🌟 பிக் கன்டென்ட் இமேஜ் (Linux / Cyber Security சார்ந்த கோடிங் படம்) -->
+                                    <div class="mt-3 mb-2">
+                                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800"
+                                            class="img-fluid rounded-4 border border-secondary" alt="Linux Coding Space"
+                                            style="width: 100%; max-height: 350px; object-fit: cover;">
+                                    </div>
+
+                                    <!-- ஃபுட்டர் ஆக்சன் ஐகான்கள் -->
+                                    <div class="d-flex justify-content-between text-white text-opacity-50 mt-4"
+                                        style="max-width: 425px; font-size: 13px;">
+                                        <span class="hover-blue"><i class="bi bi-chat me-2"></i>1.2K</span>
+                                        <span class="hover-green"><i class="bi bi-arrow-repeat me-2"></i>3.1K</span>
+                                        <span class="hover-red"><i class="bi bi-heart me-2"></i>22.8K</span>
+                                        <span class="hover-blue"><i class="bi bi-bookmark"></i></span>
+                                        <span class="hover-blue"><i class="bi bi-upload"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- ட்வீட் ஃபீட் லிஸ்ட் முடிகிறது -->
 
                     </section>
                     <!-- 🏠 JOHN - HOME/TWEET AREA END -->
                     <!-- ========================================================== -->
                     <!-- ========================================================== -->
                     <!-- ========================================================== -->
-
-
-
-
-
-
-
-
-
-
-                    <hr class="border-secondary my-4"> <!-- செக்ஷன்களைப் பிரித்துக் காட்டும் கோடு -->
 
 
 
@@ -204,7 +525,7 @@
 
 
 
-                    <hr class="border-secondary my-4"> <!-- செக்ஷன்களைப் பிரித்துக் காட்டும் கோடு -->
+
 
 
 
@@ -250,10 +571,6 @@
 
 
 
-
-
-
-
                     <!-- ========================================== ===================================== -->
                     <!-- ========================================== ===================================== -->
                     <!-- ========================================== ===================================== -->
@@ -288,7 +605,8 @@
             <!-- THIRD (3 OF 12) COLUMN STARTS HERE (RIGHT SIDEBAR) -->
             <!-- ========================================================== -->
             <!-- 🌟 3-வது காலத்தை மட்டும் தனியா ஸ்க்ரோல் செய்ய மாற்றப்பட்ட மெயின் வரி -->
-            <div class="col-md-3 p-3 d-none d-lg-block sticky-top" style="height: 100vh; overflow-y: auto; scrollbar-width: none;">
+            <div class="col-md-3 p-3 d-none d-lg-block sticky-top"
+                style="height: 100vh; overflow-y: auto; scrollbar-width: none;">
 
                 <!-- 🔍 ஸ்டெப் 1: தேடல் பட்டி (Search Box) மட்டும் -->
                 <div class="mb-3 py-2">
@@ -400,10 +718,10 @@
                         <!-- (A) இடது பகுதி: ப்ரொஃபைல் படம் மற்றும் பேரு -->
                         <div class="d-flex align-items-center">
                             <!-- ப்ரொஃபைல் வட்டப் படம் (தற்காலிகமாக JH என்ற எழுத்துக்களோடு) -->
-                            <div class="bg-primary rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold"
-                                style="width: 40px; height: 40px;">
-                                JH
-                            </div>
+                            <!-- 🌟 Jensen Huang அசல் ப்ரொஃபைல் படம் -->
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100"
+                                class="rounded-circle me-2" alt="Jensen Huang"
+                                style="width: 40px; height: 40px; object-fit: cover;">
                             <!-- பெயர் மற்றும் யூசர்நேம் -->
                             <div>
                                 <div class="fw-bold text-white small">
@@ -426,10 +744,10 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="d-flex align-items-center">
                             <!-- ப்ரொஃபைல் வட்டப் படம் (தற்காலிகமாக TC என்ற எழுத்துக்களோடு) -->
-                            <div class="bg-warning rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold"
-                                style="width: 40px; height: 40px;">
-                                TC
-                            </div>
+                            <!-- 🌟 Tim Cook அசல் ப்ரொஃபைல் படம் -->
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+                                class="rounded-circle me-2" alt="Tim Cook"
+                                style="width: 40px; height: 40px; object-fit: cover;">
                             <div>
                                 <div class="fw-bold text-white small">
                                     Tim Cook
@@ -446,10 +764,10 @@
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <div class="d-flex align-items-center">
                             <!-- ப்ரொஃபைல் வட்டப் படம் (தற்காலிகமாக LS என்ற எழுத்துக்களோடு) -->
-                            <div class="bg-danger rounded-circle me-2 text-black d-flex align-items-center justify-content-center fw-bold"
-                                style="width: 40px; height: 40px;">
-                                LS
-                            </div>
+                            <!-- 🌟 Lisa Su அசல் ப்ரொஃபைல் படம் -->
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
+                                class="rounded-circle me-2" alt="Lisa Su"
+                                style="width: 40px; height: 40px; object-fit: cover;">
                             <div>
                                 <div class="fw-bold text-white small">
                                     Lisa Su
@@ -472,7 +790,7 @@
                 <!-- Who to follow கார்டு முடிவு -->
 
 
-                
+
                 <!-- ========================================================== -->
                 <!-- 📄 ஸ்டெப் 4: TERMS & PRIVACY FOOTER LINKS (புதிதாக சேர்க்கப்பட்டது)-->
                 <!-- ========================================================== -->
@@ -517,11 +835,12 @@
 
 
 
+        <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 
-        <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js">
+        <script src="script.js"></script>
+
 
         </script>
 </body>
 
 </html>
-
