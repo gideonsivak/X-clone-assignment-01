@@ -169,3 +169,103 @@ tification-item{
 .mention{
     color:#1d9bf0;
 }
+
+
+
+/* 
+its kajan section */
+
+/* எக்ஸ் தளத்தின் அசல் பிரகாசமான நீல நிற பட்டன் */
+.btn-tweet {
+    background-color: #1d9bf0 !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* பட்டன் மீது மவுஸை வைக்கும்போது லேசான கறுப்பு நிறம் மாற */
+.btn-tweet:hover {
+    background-color: #1a8cd8 !important;
+    color: white !important;
+}
+
+/*common page design */
+body {
+    background-color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;  /* left-right la kuda content vanthalum antha side la scroll aaka vidamal hide pannum*/
+    }
+
+/* (Main Container) */
+.main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
+    min-height: 100vh;
+}
+/* 3. Header & Banner பகுதிகள் */
+.profile-banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.cover {
+    width: 100%;
+    height: 300px;      /* cover image height */
+    overflow: hidden;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* cover image aspect ratio maintain pannum */
+    display: block;  
+}
+
+.profile-avatar-row {
+    margin-top: -60px;
+    z-index: 2;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.edit-btn {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 4. Nav Tabs வடிவமைப்பு */
+.profile-tabs .nav-link {
+    border: none !important;
+    border-radius: 0 !important;
+    color: #71767b !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile-tabs .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #fff !important;
+}
+
+.profile-tabs .nav-link.active {
+    color: #fff !important;
+    border-bottom: 4px solid #1d9bf0 !important;
+}
+
+/* 5. Feed and Article (Post) syle */
+.posts-feed {
+    overflow-y: auto;
+}
+
+.post-item {
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.post-item:hover {
+    background-color: rgba(255, 255, 255, 0.03); /*put a mouse turn light colour change*/
+}
