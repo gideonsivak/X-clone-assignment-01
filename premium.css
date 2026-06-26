@@ -1,0 +1,256 @@
+/* ========================================================== */
+/* ⭐ PAVITHRA - PREMIUM MENU STYLES (SIMPLIFIED)             */
+/* ========================================================== */
+/* animation */
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom-effect 5s infinite alternate;
+}
+
+
+@keyframes zoom-effect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+.center-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;
+  padding: 20px 0;         
+}
+
+.video-card {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 15px;
+  
+}
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+} 
+.nav-premium {
+    color: #1d9bf0 !important; 
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.premium-icon {
+    color: #1d9bf0 !important;
+}
+
+.nav-premium:hover {
+    background-color: rgba(29, 155, 240, 0.1) !important; 
+    border-radius: 50px;
+    color: #1a8cd8 !important;
+}
+
+
+/* subscription styles */
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  background-color: #000; 
+  padding: 10px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #161616; 
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.card.active {
+  border: 2px solid #1d9bf0; 
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+  text-align: left;
+}
+
+/* card extra works */
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    font-size: 14px;     
+    display: flex;        
+    align-items: flex-start; 
+    gap: 10px;           
+    margin-bottom: 12px; 
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.card ul li i {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* buttons */
+.explore-btn {
+  background-color: #333; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* extra button work */
+.business-banner {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #fff;
+  font-family: sans-serif;
+  gap: 15px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.icon { font-size: 24px; }
+
+.title { font-weight: bold; margin-bottom: 2px; }
+
+.subtitle { color: #aaa; font-size: 14px; }
+
+.explore-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* table */
+.comparison-table {
+  background-color: #161616; 
+  color: white;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333; 
+}
+
+/* table extra works  */
+.table-wrapper {
+  max-width: 900px; 
+  margin: 20px auto; 
+  background-color: #161616; 
+  border-radius: 16px; 
+  padding: 20px;
+  text-align:center ;
+}
+
+.comparison-table {
+  width: 100%;
+  color: white;
+  border-collapse: collapse;
+  font-size: 14px; 
+  margin-bottom: 20px; 
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 12px 15px; 
+  border-bottom: 1px solid #2f2f2f; 
+}
+
+
+/* last */
+.subscription-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 0px 10%;
+  width: 100%;       
+  box-sizing: border-box;
+  position: sticky;
+  bottom: 0;      
+  z-index: 1000;
+}
+
+.plan-name { font-size: 20px; margin-bottom: 5px; }
+.price { font-size: 32px; font-weight: bold; }
+.period, .billing-info { color: #888; }
+
+.subscribe-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.terms {
+  font-size: 11px;
+  color: #666;
+  max-width: 400px;
+  line-height: 1.4;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.terms a { color: #aaa; text-decoration: underline; }
+/* responsive */
+@media (max-width: 768px) {
+  .subscription-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subscription-action {
+    align-items: center;
+    width: 100%;
+  }
+}
