@@ -108,3 +108,64 @@
 }
 /* ========================================================== */
 
+tification-item{
+    gap:15px;
+    border-bottom:1px solid #2f3336;
+    transition:0.3s;
+}
+
+.notification-item:hover{
+    background:#080808;
+}
+
+.notification-item img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    /* object-fit:cover; */
+}
+
+/* .content{
+    flex:1;
+} */
+
+.content p{
+    /* margin:0; */
+    color:#71767b;
+    line-height:1.5;
+}
+
+/* .content strong{
+    color:#fff;
+} */
+
+.time{
+    /* position:absolute; */
+    right:15px;
+    top:18px;
+    color:#71767b;
+    font-size:13px;
+}
+
+.icon{
+    font-size:18px;
+    width:20px;
+    /* text-align:center; */
+    /* margin-top:8px; */
+}
+
+.bi-heart-fill{
+    color:#f91880;
+}
+
+.bi-repeat{
+    color:#00ba7c;
+}
+
+.bi-person-fill{
+    color:#1d9bf0;
+}
+
+.mention{
+    color:#1d9bf0;
+}
