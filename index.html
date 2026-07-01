@@ -36,21 +36,21 @@
                     <li class="nav-item mb-3">
                         <!-- 🌟 href="#" ஐ நீக்கிவிட்டு, id மற்றும் onclick செயல்பாடுகள் இங்கே சேர்க்கப்பட்டுள்ளது -->
                         <a id="#home" class="nav-link active text-white fs-5 fw-bold d-flex align-items-center"
-                            style="cursor: pointer;" onclick="showSection('home')">
+                            style="cursor: pointer;" onclick="showSection('john-home-tweets')">
                             <i class="bi bi-house-door-fill me-3"></i> Home
                         </a>
                     </li>
 
                     <!-- 2. Notifications மெனு -->
                     <li class="nav-item mb-3">
-                        <a class="nav-link text-white fs-5 d-flex align-items-center" href="#">
+                        <a class="nav-link text-white fs-5 d-flex align-items-center" style="cursor: pointer;" onclick="showSection('divinson-notifications')">
                             <i class="bi bi-bell me-3"></i> Notifications
                         </a>
                     </li>
 
                     <!-- 3. Profile மெனு -->
                     <li class="nav-item mb-3">
-                        <a class="nav-link text-white fs-5 d-flex align-items-center" href="#">
+                        <a class="nav-link text-white fs-5 d-flex align-items-center" style="cursor: pointer;" onclick="showSection('kajan-about')">
                             <i class="bi bi-person me-3"></i> Profile
                         </a>
                     </li>
@@ -499,8 +499,7 @@
                     <!-- ========================================================== -->
                     <!-- திவின்சன், உன்னோட நோட்டிபிகேஷன் கோடு எல்லாமே இந்த வரிக்கிக் கீழேதான் வரணும். from 153th line -->
                     <!-- ஜான்  மற்றும் கஜன் அண்ணன் இந்த செக்ஷனுக்குள்ள கை வைக்கத் தேவை இல்லை. -->
-                    <section id="divinson-notifications"
-                        class="border-bottom border-secondary p-3 bg-dark bg-opacity-10">
+                    <section id="divinson-notifications" class="border-bottom border-secondary p-3 bg-dark bg-opacity-10" style="display: none;">
 
 
 
@@ -662,7 +661,7 @@
                     <!-- ========================================================== -->
                     <!-- கஜன் அண்ணன், உங்களோட எபௌட் (About) கோடு எல்லாமே இந்த வரிக்கிக் கீழேதான் வரணும்.  -->
                     <!-- ஜான் மற்றும் திவின்சன் இந்த செக்ஷனுக்குள்ள கை வைக்கத் தேவை இல்லை. -->
-                    <section id="kajan-about" class="p-3">
+                    <section id="kajan-about" class="p-3" style="display: none;">
 
 
   
@@ -679,12 +678,12 @@
            <!--cover/banner image pakkathikkuriyathu -->
             <div class="profile-banner">
         <!--cover/banner image -->
-                <img src="./close-up-of-a-charming-ginger-kitten-with-big-blue-eyes-resting-on-a-soft-blanket-photo.jpg" class="cover-img" alt="Kajan siva Profile Banner">
+                <img src="ASSTES/kajan poster.jpg" class="cover-img" alt="Kajan siva Profile Banner">
             </div>
         <!--profile picture and edit profile button pakkuthikkuriyathu -->
             <div class="px-3 d-flex justify-content-between align-items-end profile-avatar-row">  <!--profile picture ooda section-->
                <!--profile picture -->
-                <img src="./Screenshot 2026-06-26 104924.png" alt="Kajan siva Profile Picture" class="rounded-circle border border-5 border-black profile-img">
+                <img src="ASSTES/kajan.jpg" alt="Kajan siva Profile Picture" class="rounded-circle border border-5 border-black profile-img">
                <!--edit profile button -->
                 <button class="btn btn-outline-light rounded-pill fw-bold edit-btn" aria-label="Edit Profile">Edit profile</button>
             </div>
@@ -738,7 +737,7 @@
                 <!-- Post item -->
                 <article class="post-item p-3 border-bottom border-secondary">
                     <a href="post-details.html" class="text-decoration-none text-white d-flex gap-3">
-                        <img src="./Screenshot 2026-06-26 104924.png" class="rounded-circle align-self-start profile-img" alt="User">
+                        <img src="ASSTES/kajan.jpg" class="rounded-circle align-self-start profile-img" alt="User">
                         <div class="w-100">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -759,7 +758,7 @@
                 </article>
                         
                   <article class="post-item p-3 border-bottom border-secondary d-flex gap-3">
-                    <img src="./a.png" class="rounded-circle align-self-start profile-img" alt="A.Divi">
+                    <img src="ASSTES/divi.png" class="rounded-circle align-self-start profile-img" alt="A.Divi">
                     <div class="w-100">
                         <div class="d-flex gap-2 align-items-center">
                             <span class="fw-bold">A.Divinsan</span>
@@ -776,7 +775,7 @@
                     </div>
                 </article>
                  <article class="post-item p-3 border-bottom border-secondary d-flex gap-3">
-                    <img src="./image (2).png" class="rounded-circle align-self-start profile-img" alt="sumo">
+                    <img src="ASSTES/sumo.png" class="rounded-circle align-self-start profile-img" alt="sumo">
                     <div class="w-100">
                         <div class="d-flex gap-2 align-items-center">
                             <span class="fw-bold">Sumukan</span>
@@ -793,7 +792,7 @@
                     </div>
                 </article>
                  <article class="post-item p-3 border-bottom border-secondary d-flex gap-3">
-                    <img src="./image (3).png" class="rounded-circle align-self-start profile-img" alt="pavi akka">
+                    <img src="ASSTES/pavi.png"  class="rounded-circle align-self-start profile-img" alt="pavi akka">
                     <div class="w-100">
                         <div class="d-flex gap-2 align-items-center">
                             <span class="fw-bold">V.Paviththira</span>
@@ -810,7 +809,7 @@
                     </div>
                 </article>
                  <article class="post-item p-3 border-bottom border-secondary d-flex gap-3">
-                    <img src="./T0B63FLDT2S-U0B6K45B6KT-698333e91f31-512.jpeg" class="rounded-circle align-self-start profile-img" alt="John">
+                    <img src="ASSTES/me.jpg" class="rounded-circle align-self-start profile-img" alt="John">
                     <div class="w-100">
                         <div class="d-flex gap-2 align-items-center">
                             <span class="fw-bold">S.John</span>
