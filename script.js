@@ -4,4 +4,4 @@ function autoResize(element) {
     element.style.height = "auto";
     // டைப் செய்த எழுத்துக்களின் உயரத்துக்கு ஏத்த மாதிரி பாக்ஸை கீழே இறக்குகிறோம்
     element.style.height = element.scrollHeight + "px";
-}
+}   
