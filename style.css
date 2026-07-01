@@ -272,3 +272,137 @@ body {
 .post-item:hover {
     background-color: rgba(255, 255, 255, 0.03); /*put a mouse turn light colour change*/
 }
+
+/* ========================================================== */
+/* 📱 RESPONSIVE CSS - Basic Responsiveness for X Clone       */
+/* ========================================================== *
+
+/* ========================================================== */
+/* 1. TABLET VIEW (992px க்கும் கீழ) - iPad போன்ற screen-களுக்கு */
+/* ========================================================== */
+@media (max-width: 991.98px) {
+
+    /* மூணாவது column (Trends, Who to follow) tablet-ல 
+       முழுசா hide ஆகணும் - Bootstrap "d-lg-block" already 
+       handle பண்றது, இது extra safety க்காக */
+    .col-md-3.d-none.d-lg-block {
+        display: none !important;
+    }
+
+    /* நடு column (Home feed) tablet-ல முழு width எடுக்கணும்
+       ஏனெண்டா வலது column hide ஆயிடுச்சு */
+    main.col-md-6 {
+        width: 75% !important;   /* left sidebar (25%) மிச்சம் இருக்கு, மீதி எல்லாம் இதுக்கே */
+        max-width: 75% !important;
+        flex: 0 0 75% !important;
+    }
+}
+
+/* ========================================================== */
+/* 2. MOBILE VIEW (768px க்கும் கீழ) - Phone screen-களுக்கு    */
+/* ========================================================== */
+@media (max-width: 767.98px) {
+
+    /* left sidebar (logo, menu, post button) full width ஆகி
+       மேல இருக்கணும் mobile-ல, side-ல இல்லாம */
+    .col-md-3.border-end {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        height: auto !important;          /* vh-100 mobile-ல தேவை இல்ல */
+        border-right: none !important;    /* side border வேணாம் */
+        border-bottom: 1px solid #2f3336; /* அதுக்கு பதிலா கீழ border */
+        padding-bottom: 10px !important;
+    }
+
+    /* left sidebar-ல menu text-களை hide பண்ணி icon மட்டும் காட்டணும்
+       (mobile-ல space குறைவு, so icon-only nav) */
+    .col-md-3 .nav-link span,
+    .col-md-3 .nav-link .premium-text {
+        display: none !important;
+    }
+
+    /* menu-வை horizontal-ஆ (வரிசையா) மாத்தணும், 
+       vertical-ஆ இருந்தா mobile-ல ரொம்ப உயரமா போயிடும் */
+    .col-md-3 ul.nav.flex-column {
+        flex-direction: row !important;
+        justify-content: space-around;
+        padding: 10px 0 !important;
+    }
+
+    /* John Doe account bottom section mobile-ல hide பண்ணலாம்
+       (screen space மிச்சம் பிடிக்க) */
+    .col-md-3 .px-3.d-flex.align-items-center.justify-content-between {
+        display: none !important;
+    }
+
+    /* நடு column (tweets feed) mobile-ல முழு 100% width எடுக்கணும் */
+    main.col-md-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        height: auto !important;   /* fixed 100vh scroll mobile-ல வேணாம் */
+        border-right: none !important;
+    }
+
+    /* tweet image mobile-ல height குறைக்கணும்,
+       பெரிய screen-ல இருக்கிற 350px mobile-ல ஏத்த மாட்டேங்குது */
+    main img.img-fluid {
+        max-height: 220px !important;
+    }
+
+    /* tweet text font size mobile-ல கொஞ்சம் சிறுசா பண்ணலாம் */
+    main p.text-white {
+        font-size: 14px !important;
+    }
+
+    /* Post modal box mobile screen-ல edge-to-edge ஆ இருக்கக்கூடாது,
+       கொஞ்சம் margin வைக்கணும் */
+    .modal-dialog {
+        margin: 10px !important;
+    }
+
+    /* profile section (kajan-about) cover image mobile-ல 
+       உயரம் குறைக்கணும் */
+    .profile-banner {
+        height: 130px !important;
+    }
+
+    /* profile picture mobile-ல சின்னதா பண்ணணும் */
+    .profile-img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    /* profile tabs (Posts, Replies, Media, Likes) font size 
+       mobile-ல சின்னதா ஆகணும், இல்லன்னா overflow ஆயிடும் */
+    .profile-tabs .nav-link {
+        font-size: 13px !important;
+        padding: 10px 4px !important;
+    }
+}
+
+/* ========================================================== */
+/* 3. SMALL MOBILE (480px க்கும் கீழ) - சின்ன phone screens   */
+/* ========================================================== */
+@media (max-width: 480px) {
+
+    /* tweet box padding குறைக்கணும், சின்ன screen-ல space மிச்சம் */
+    .d-flex.p-3.py-4,
+    .d-flex.py-4.px-3 {
+        padding: 10px !important;
+    }
+
+    /* profile pic (tweet-ல இருக்கிற) இன்னும் கொஞ்சம் சின்னதா */
+    main .rounded-circle {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    /* Post button (compose) சின்ன screen-ல full width ஆகணும் */
+    main button.btn-primary.rounded-pill {
+        padding: 6px 14px !important;
+        font-size: 14px !important;
+    }
+}
+
