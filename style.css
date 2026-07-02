@@ -310,7 +310,7 @@ body {
         width: 100% !important;
         max-width: 100% !important;
         flex: 0 0 100% !important;
-        height: auto !important;          /* vh-100 mobile-ல தேவை இல்ல */
+        height: auto !important; /* <-- viewport height-100 mobile-ல தேவை இல்ல */
         border-right: none !important;    /* side border வேணாம் */
         border-bottom: 1px solid #2f3336; /* அதுக்கு பதிலா கீழ border */
         padding-bottom: 10px !important;
