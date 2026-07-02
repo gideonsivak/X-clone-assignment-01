@@ -109,8 +109,10 @@
                                 <div class="w-100">
                                     <textarea
                                         class="form-control bg-transparent text-white border-0 p-0 fs-5 no-focus-outline shadow-none"
-                                        rows="4" placeholder="What is happening?!"
-                                        style="resize: none; caret-color: #1d9bf0;"></textarea>
+                                        rows="4" placeholder="What is happening?!" placeholder="What is happening?!"
+                                        rows="1" oninput="autoResize(this)"
+                                        style="resize: none; caret-color: #1d9bf0; overflow: hidden; min-height: 25px;">
+</textarea>
                                     <hr class="border-secondary my-3">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex gap-3 text-primary fs-5">
@@ -673,7 +675,7 @@
                             </div>
                             <div class="w-100">
                                 <img src="ASSTES/images.jpeg">
-                                 <p class="m-0"><strong class="text-white">Sunjinwoo</strong> liked your reply</p>
+                                <p class="m-0"><strong class="text-white">Sunjinwoo</strong> liked your reply</p>
                             </div>
 
                             <div class="content">
@@ -804,7 +806,7 @@
                             <div class="tab-pane fade show active" id="posts-content" role="tabpanel"
                                 aria-labelledby="posts-tab">
 
-                                <!-- Post item -->
+                                <!-- Post article item -->
                                 <article class="post-item p-3 border-bottom border-secondary">
                                     <a href="post-details.html" class="text-decoration-none text-white d-flex gap-3">
                                         <img src="ASSTES/kajan.jpg" class="rounded-circle align-self-start profile-img"
