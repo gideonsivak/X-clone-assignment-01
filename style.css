@@ -295,6 +295,7 @@ body {
         width: 75% !important;   /* left sidebar (25%) மிச்சம் இருக்கு, மீதி எல்லாம் இதுக்கே */
         max-width: 75% !important;
         flex: 0 0 75% !important;
+        /*flex-grow - extra spaces availeble x /// flex-shrink extra spaces not availeble x  flex-basis இந்த column-ஓட starting/base size 75%" */
     }
 }
 
@@ -379,30 +380,6 @@ body {
     .profile-tabs .nav-link {
         font-size: 13px !important;
         padding: 10px 4px !important;
-    }
-}
-
-/* ========================================================== */
-/* 3. SMALL MOBILE (480px க்கும் கீழ) - சின்ன phone screens   */
-/* ========================================================== */
-@media (max-width: 480px) {
-
-    /* tweet box padding குறைக்கணும், சின்ன screen-ல space மிச்சம் */
-    .d-flex.p-3.py-4,
-    .d-flex.py-4.px-3 {
-        padding: 10px !important;
-    }
-
-    /* profile pic (tweet-ல இருக்கிற) இன்னும் கொஞ்சம் சின்னதா */
-    main .rounded-circle {
-        width: 34px !important;
-        height: 34px !important;
-    }
-
-    /* Post button (compose) சின்ன screen-ல full width ஆகணும் */
-    main button.btn-primary.rounded-pill {
-        padding: 6px 14px !important;
-        font-size: 14px !important;
     }
 }
 
